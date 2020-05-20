@@ -1,0 +1,14 @@
+/home/fernandocardo/dev/dotnet/simples/simples/bin/Debug/netcoreapp2.1/simples.deps.json
+/home/fernandocardo/dev/dotnet/simples/simples/bin/Debug/netcoreapp2.1/simples.runtimeconfig.json
+/home/fernandocardo/dev/dotnet/simples/simples/bin/Debug/netcoreapp2.1/simples.runtimeconfig.dev.json
+/home/fernandocardo/dev/dotnet/simples/simples/bin/Debug/netcoreapp2.1/simples.dll
+/home/fernandocardo/dev/dotnet/simples/simples/bin/Debug/netcoreapp2.1/simples.pdb
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.csprojAssemblyReference.cache
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.csproj.CoreCompileInputs.cache
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.RazorAssemblyInfo.cache
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.RazorAssemblyInfo.cs
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.AssemblyInfoInputs.cache
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.AssemblyInfo.cs
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.RazorTargetAssemblyInfo.cache
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.dll
+/home/fernandocardo/dev/dotnet/simples/simples/obj/Debug/netcoreapp2.1/simples.pdb
