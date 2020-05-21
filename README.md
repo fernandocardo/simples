@@ -64,18 +64,47 @@ Para carregar uma imagem previamente salva, no diretório onde o arquivo .tar es
 `docker load < simples.tar`
 
 ## Docker Compose
-Para carregar uma imagem previamente salva, no diretório onde o arquivo .tar está, use o comando `docker load`.
+Docker compose lhe dá a possibilidade de subir uma aplicação com várias camadas e dependências. No nosso exemplo, subindo a aplicação que teve sua imagem previamente criada com o `docker build`.
 
-```docker-compose
+
+```yaml
 version: '3.1'
 
 services:
 
   simples:
     image: simples
-    restart: always
-    environment:
-      ASPNETCORE_URLS: http://+:5000
     ports:
       - 5005:5000
+```
+A configuração da aplicação fica no item `services`. Nessa camada você coloca todos os parametros que colocaria no comando `docker run`. Para utilizar o docker compose, use o comando abaixo:
+
+`docker-compose up`
+
+Abaixo o comando `docker run` equivalente ao `docker-compose` apresentado:
+
+`docker run -p 5000:5000 simples`
+
+Caso sua aplicação tenha integrações ou dependências, você pode incluir mais `services:`. No exemplo abaixo vamos incluir o Mysql e o Adminer:
+
+```yaml
+version: '3.1'
+  
+  simples:
+    image: simples
+    ports:
+      - 5005:5000  
+  
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
 ```
