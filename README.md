@@ -83,7 +83,7 @@ A configuração da aplicação fica no item `services`. Nessa camada você colo
 
 Abaixo o comando `docker run` equivalente ao `docker-compose` apresentado:
 
-`docker run -p 5000:5000 simples`
+`docker run -p 5005:5000 simples`
 
 Caso sua aplicação tenha integrações ou dependências, você pode incluir mais `services:`. No exemplo abaixo vamos incluir o Mysql e o Adminer:
 
