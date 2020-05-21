@@ -62,3 +62,20 @@ Para carregar uma imagem previamente salva, no diretório onde o arquivo .tar es
 
 
 `docker load < simples.tar`
+
+## Docker Compose
+Para carregar uma imagem previamente salva, no diretório onde o arquivo .tar está, use o comando `docker load`.
+
+```docker-compose
+version: '3.1'
+
+services:
+
+  simples:
+    image: simples
+    restart: always
+    environment:
+      ASPNETCORE_URLS: http://+:5000
+    ports:
+      - 5005:5000
+```
