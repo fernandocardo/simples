@@ -50,3 +50,15 @@ EXPOSE  5000
 ```yaml
 ENTRYPOINT ["dotnet", "simples.dll"]
 ```
+
+## Docker Save
+Para compartilhar uma imagem já pronta do seu projeto, pode usar o comando `docker save`. Dessa forma será gerado um arquivo.tar com sua imagem pronta para ser carregada em outro computador, de forma privada.
+
+
+`docker save simples > simples.tar`
+
+## Docker Load
+Para carregar uma imagem previamente salva, no diretório onde o arquivo .tar está, use o comando `docker load`.
+
+
+`docker load < simples.tar`
