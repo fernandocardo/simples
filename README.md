@@ -8,7 +8,7 @@ O Build do Dockerfile deve ser realizado em 3 fases :
 
 1. A partir de uma imagem contendo o SDK, copie o .csproj para o container e faça o restore das dependencias:
 
-```yaml
+```dockerfile
 # PARTE 1: BUILD
 FROM mcr.microsoft.com/dotnet/core/sdk:2.1-alpine AS build-env
 WORKDIR /app
@@ -21,7 +21,7 @@ Caso tenha vários projetos dentro de uma solution, faça copia de cada um deles
 
 2. Rode o comando dotnet publish em modo Release
 
-```yaml
+```dockerfile
 # publish da aplicacao
 COPY . ./
 RUN dotnet publish -c Release -o out
