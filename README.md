@@ -30,7 +30,7 @@ Esse comando vai gerar o arquivo .dll executável
 
 3. Gere a imagem final da sua aplicação, contendo apenas o Runtime (que é muito menor) e o código fonde de sua aplicação já compilado.
 
-```yaml
+```dockerfile
 # PARTE 2: IMAGEM FINAL
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.1-alpine AS runtime
 ENV ASPNETCORE_URLS=http://+:5000
@@ -41,13 +41,13 @@ ENTRYPOINT ["dotnet", "simples.dll"]
 ```
 ### Pontos de ação:
 * Use os comandos abaixo para definir a porta onde a aplicação ficará exposta no container:
-```yaml
+```dockerfile
 ENV ASPNETCORE_URLS=http://+:5000
 EXPOSE  5000
 ```
 * O entrypoint deve apontar para a DLL principal do projeto.
 
-```yaml
+```dockerfile
 ENTRYPOINT ["dotnet", "simples.dll"]
 ```
 
