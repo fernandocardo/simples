@@ -1,5 +1,5 @@
 # Simples
-Projeto simples para aprendizado de docker, docker build e docker compose utilizando o .net core
+Projeto simples para aprendizado de docker, docker build e docker compose utilizando o .net core   
 
 ## Dockerfile
 O Dockerfile utilizando para .net core tem algumas peculiaridades:
